@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+$grey-light: #E7E7E7
+$grey-light-2: #D4D4D4
+$default-fontcolor: #081555
+
+html
+  // This defines what 1rem is
+  font-size: 62.5%      // 1 rem = 10px; 10px/16px = 62.5%
+
+body
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.container
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  li
+    padding: 2rem
+    font-size: 2rem
+    list-style: none
+    background-color: $grey-light
+
+    &:nth-child(odd)
+      background-color: $grey-light-2
+
+    a, a:visited
+      color: $default-fontcolor
+      text-decoration: none
+      font-weight: bold
