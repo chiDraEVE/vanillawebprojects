@@ -2,7 +2,9 @@
 
 $grey-light: #E7E7E7
 $grey-light-2: #D4D4D4
+$grey-dark: #343434
 $default-fontcolor: #081555
+$blue: rgba(0,144, 255, .8)
 
 html
   // This defines what 1rem is
@@ -18,12 +20,31 @@ body
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+  background-color: $grey-light
 
-  li
+h1
+  text-align: center
+  font-size: 3rem
+  line-height: 3.5rem
+  text-decoration: underline
+
+ul
+  list-style: none
+  counter-reset: my-awesome-counter
+  padding: 0
+  margin: 0
+
+  & li
+    counter-increment: my-awesome-counter
     padding: 2rem
     font-size: 2rem
-    list-style: none
-    background-color: $grey-light
+    border: 1px solid $grey-dark
+    box-shadow: 1px 2px rgba(white, .7)
+
+    &::before
+      content: counter(my-awesome-counter) ". "
+      color: red
+      font-weight: bold
 
     &:nth-child(odd)
       background-color: $grey-light-2
