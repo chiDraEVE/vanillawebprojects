@@ -13,7 +13,11 @@ getRandomUser()
 
 // fetch random user and add money
 async function getRandomUser() {
-	const res = await fetch('https://api.randomuser.me', {headers: { 'Access-Control-Allow-Origin': '*'}})
+	const res = await fetch('https://api.randomuser.me/', {
+		// method: 'GET',
+		// mode: 'no-cors',
+		headers: { 'Access-Control-Allow-Origin': '*'}
+	})
 	const data = await res.json()
 
 	const user = data.results[0]
@@ -35,6 +39,12 @@ function doubleMoney() {
 // Sort users by richtest
 function sortByRichest() {
 	data.sort((a, b) => b.money - a.money)
+	updateDOM()
+}
+
+// Filter only millionaires
+function showMillionaires() {
+	data = data.filter(user => user.money > 1000000)
 	updateDOM()
 }
 
@@ -67,3 +77,4 @@ function formatMoney(number) {
 addUserBtn.addEventListener('click', getRandomUser)
 doubleBtn.addEventListener('click', doubleMoney)
 sortBtn.addEventListener('click', sortByRichest)
+showMillionairesBtn.addEventListener('click', showMillionaires)
