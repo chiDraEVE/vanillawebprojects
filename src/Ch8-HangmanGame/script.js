@@ -4,7 +4,6 @@ const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
-const finalMessageRevealWord = document.getElementById('final-message-reveal-word');
 
 const figureParts = document.querySelectorAll('.figure-part');
 
@@ -27,9 +26,9 @@ function displayWord() {
 		`).join('')
 	}
 	`
-	const innnerWord = wordEl.innerText.replace(/\n/g, '')
+	const innerWord = wordEl.innerText.replace(/\n/g, '')
 
-	if (innnerWord === selectedWord) {
+	if (innerWord === selectedWord) {
 		finalMessage.innerText = 'Congratulations! You won! 😃'
 		popup.style.display = 'flex'
 	}
@@ -101,7 +100,7 @@ window.addEventListener('keypress', e => {
 	} else if (e.keyCode !== undefined) {
 		// Handle the event with KeyboardEvent.keyCode and set handled true.
 		handled = true
-		if (e.keycode >= 65 && e.keycode <= 90) {
+		if (e.keyCode >= 65 && e.keyCode <= 90) {
 			handleLetter(e.key)
 		}
 	}
