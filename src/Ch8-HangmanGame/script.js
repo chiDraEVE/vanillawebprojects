@@ -54,7 +54,10 @@ function updateWrongLettersEl() {
 	// Check if lost
 	if (wrongLetters.length === figureParts.length) {
 		finalMessage.innerText = 'Unfortunately you lost. 😕'
-		popup.style.display = 'flex'
+		finalMessageRevealWord.innerText = `...the word was: ${selectedWord}`;
+		popup.style.display = 'flex';
+
+		playable = false;
 	}
 }
 
@@ -142,6 +145,8 @@ window.addEventListener('keypress', e => {
 
 // Restart game and play again
 playAgainBtn.addEventListener('click', () => {
+	playable = true;
+
   // Empty arrays
 	correctLetters.splice(0)
 	wrongLetters.splice(0)
