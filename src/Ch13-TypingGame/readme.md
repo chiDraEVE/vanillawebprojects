@@ -1,3 +1,8 @@
+# Ideen Projekt durch eigenen Code zu erweitern
+- [ ] Stetig wiederkehrende CSS-Zeilen durch Sass-Mixins ersetzen
+
+# Tutor's Notes
+
 ## Speed Typer Typing Game
 
 Game to beat the clock by typing random words
