@@ -1,5 +1,6 @@
 # Ideen Projekt durch eigenen Code zu erweitern
 - [ ] Stetig wiederkehrende CSS-Zeilen durch Sass-Mixins ersetzen
+- [ ] Wörter aus einer API beziehen
 
 # Tutor's Notes
 
