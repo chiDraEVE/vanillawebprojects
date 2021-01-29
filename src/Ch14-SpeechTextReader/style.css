@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #ffefea;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  margin: 0; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNoMTQtU3BlZWNoVGV4dFJlYWRlci9zdHlsZS5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJEQUFZO0FBRVo7RUFDRSxzQkFBc0IsRUFBQTs7QUFHeEI7RUFDRSxtQkFBbUI7RUFDbkIsK0JBQStCO0VBQy9CLGlCQUFpQjtFQUNqQixTQUFTLEVBQUEiLCJmaWxlIjoiQ2gxNC1TcGVlY2hUZXh0UmVhZGVyL3N0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9TGF0bycpO1xuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDsgfVxuXG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kOiAjZmZlZmVhO1xuICBmb250LWZhbWlseTogJ0xhdG8nLCBzYW5zLXNlcmlmO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgbWFyZ2luOiAwOyB9XG4iXX0= */
