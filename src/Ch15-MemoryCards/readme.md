@@ -1,5 +1,6 @@
 # Meine Notizen zum erweitern
 -[ ] Im Backend speichern
+-[ ] Delete Button auf die Karte
 -[ ] Authentification
 -[ ] Pagination
 -[ ] Kategorien
