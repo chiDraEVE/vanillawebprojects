@@ -1,3 +1,14 @@
+# Meine Notizen zum erweitern
+-[ ] Im Backend speichern
+-[ ] Authentification
+-[ ] Pagination
+-[ ] Kategorien
+-[ ] Hotkeys zuweisen
+-[ ] Stapel (oft wiederholen, neu, weniger wiederholen)
+-[ ] Lern-Statistik
+
+# Tutor's Text
+
 ## Memory Cards
 
 Flash card app for learning. Display, add and remove memory cards with questions and answers
