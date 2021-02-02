@@ -12,27 +12,40 @@ html
 
 body
   box-sizing: border-box
-  margin: 0
+  margin: 20px auto
   padding: 0
-
-.container
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  background-color: $grey-light
+  max-width: 1200px
+  min-height: 100vh
+  position: relative
+  display: grid
+  /*noinspection CssInvalidPropertyValue*/
+  grid-template-rows: min-content min-content
 
 h1
   text-align: center
   font-size: 3rem
   line-height: 3.5rem
   text-decoration: underline
+  padding: 20px
 
 ul
   list-style: none
   counter-reset: my-awesome-counter
-  padding: 0
-  margin: 0
+  padding: 30px
+  margin: auto 0
+  height: 100%
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr))
+  grid-template-rows: repeat(10, 1fr)
+  justify-content: center
+
+
+  //noinspection CssOverwrittenProperties
+  @media only screen and (max-width: 1000px)
+    /*noinspection CssOverwrittenProperties*/
+    grid-template-columns: minmax(-webkit-min-content, 500px)
+    /*noinspection CssOverwrittenProperties*/
+    grid-template-columns: minmax(min-content, 500px)
 
   & li
     counter-increment: my-awesome-counter
@@ -41,15 +54,23 @@ ul
     border: 1px solid $grey-dark
     box-shadow: 1px 2px rgba(white, .7)
 
+    @media only screen and (max-width: 1000px)
+      &:nth-child(odd)
+        background-color: $grey-light-2
+
+    @media only screen and (min-width: 1001px)
+      &:nth-child(4n-1), &:nth-child(4n-2)
+        background-color: $grey-light-2
+
     &::before
       content: counter(my-awesome-counter) ". "
       color: red
       font-weight: bold
 
-    &:nth-child(odd)
-      background-color: $grey-light-2
-
     a, a:visited
       color: $default-fontcolor
       text-decoration: none
       font-weight: bold
+
+    &.unfinished a
+      color: darkgrey
