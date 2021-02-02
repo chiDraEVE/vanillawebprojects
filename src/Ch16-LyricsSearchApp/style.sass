@@ -1,2 +1,37 @@
-*
-  box-sizing: border-box
+@use "../sass/base"
+@import "../sass/mixins"
+
+body
+  background-color: #ffffff
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0
+
+button
+  cursor: pointer
+
+  &:active
+    transform: scale(0.95)
+
+  &:focus, input:focus
+    outline: none
+
+header
+  background-image: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  color: #ffffff
+  @include flexCenter
+  padding: 100px 0
+  position: relative
+
+  &::after
+    content: ""
+    @include positionAbsolutFull
+    background-color: rgba(0, 0, 0, 0.4)
+
+  & *
+    z-index: 1
+
+  & h1
+    margin: 0 0 30px
