@@ -1,5 +1,6 @@
 # Meine Notizen zum erweitern
 -[ ] Zyklus anpassen an QiGong oder ähnlicher realistischer Atemübung
+-[ ] Einstellungsmenü erstellen
 
 # Tutor's Text
 
