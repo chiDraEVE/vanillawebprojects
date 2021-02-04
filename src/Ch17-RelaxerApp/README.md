@@ -1,3 +1,8 @@
+# Meine Notizen zum erweitern
+-[ ] Zyklus anpassen an QiGong oder ähnlicher realistischer Atemübung
+
+# Tutor's Text
+
 ## Relaxer App
 
 A relaxing breathing app with a visual director to tell you when to breathe in, hold and breathe out
